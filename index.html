@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyUI and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
     <title>Smart Ticketing</title>
 </head>
-<body>
-    
+
+<body class="font-raleway">
+    <header class="container mx-auto">
+        <!-- navBar -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li class="font-medium text-lg text-[#030712B2]"><a>Home</a></li>
+                        <li class="font-medium text-lg text-[#030712B2]"><a>About</a></li>
+                        <li class="font-medium text-lg text-[#030712B2]"><a>Destination</a></li>
+                        <li class="font-medium text-lg text-[#030712B2]"><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="font-medium text-lg text-[#030712B2]"><a>Home</a></li>
+                    <li class="font-medium text-lg text-[#030712B2]"><a>About</a></li>
+                    <li class="font-medium text-lg text-[#030712B2]"><a>Destination</a></li>
+                    <li class="font-medium text-lg text-[#030712B2]"><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn text-[#1DD100] font-bold text-xl px-[30px] py-4 h-[60px] border border-[#1DD100]">Bus <img
+                        src="images/bus-icon.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <section
+            class="bg-[url('images/banner.png')] mx-5 lg:mx-0 my-5 h-[750px] lg:h-[680px] bg-no-repeat rounded-[32px] bg-cover text-white relative">
+            <div class="flex flex-col h-full items-center lg:justify-center text-center">
+                <h1 class="lg:text-[64px] mt-5 lg:mt-0 py-3 lg:py-5 px-5 lg:px-[400px]  font-extrabold ">End-to-End
+                    Travel with <span class="text-[#1DD100]">P Paribahan</span></h1>
+                <p class="lg:text-[18px] px-5 lg:px-[450px]">Yes, you can run unit tests and view the results directly
+                    within the app. The integrated testing features allow for a streamlined .</p>
+                <a class="btn text-black font-bold text-xl px-[30px] my-3 lg:m-7 h-[60px] border-none bg-[#1DD100]">Bus
+                    Tickets</a>
+            </div>
+            <!-- box -->
+            <div
+                class="text-black flex flex-col lg:flex-row gap-2 lg:gap-0 px-5 lg:p-0 lg:justify-evenly absolute bottom-10 lg:relative lg:bottom-24">
+                <!-- box 1 -->
+                <div
+                    class="w-[350px] h-[145px] bg-white border-b-4 border-b-[#1DD100] flex justify-center items-center gap-8 rounded-[24px]">
+                    <div>
+                        <img src="images/people.png" alt="">
+                    </div>
+                    <div class="space-y-3">
+                        <h1 class="font-bold text-4xl">500k+</h1>
+                        <p class="text-[#03071299]">Registered users</p>
+                    </div>
+                </div>
+                <!-- box 2 -->
+                <div
+                    class="w-[350px] h-[145px] bg-white border-b-4 border-b-[#1DD100] flex justify-center items-center gap-8 rounded-[24px]">
+                    <div>
+                        <img src="images/ticket-cupon.png" alt="">
+                    </div>
+                    <div class="space-y-3">
+                        <h1 class="font-bold text-4xl">1.7 lacks</h1>
+                        <p class="text-[#03071299]">Tickets sold</p>
+                    </div>
+                </div>
+                <!-- box 3 -->
+                <div
+                    class="w-[350px] h-[145px] bg-white border-b-4 border-b-[#1DD100] flex justify-center items-center gap-8 rounded-[24px]">
+                    <div>
+                        <img src="images/stoppage.png" alt="">
+                    </div>
+                    <div class="space-y-3">
+                        <h1 class="font-bold text-4xl">80K+</h1>
+                        <p class="text-[#03071299]">Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+    <main>
+        <!-- second page -->
+         <section>
+            
+         </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
