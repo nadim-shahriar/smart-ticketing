@@ -1,32 +1,28 @@
-function hideElementById(elementId){
-    const element = document.getElementById(elementId)
-    console.log(element)
-    element.classList.add('hidden')
+function setInnerTextById(elementId, value) {
+    document.getElementById(elementId).innerText = value;
 }
+
+function handleSeatClick(seatData){
+    const tableBody =document.getElementsByTagName('tbody')[0];
+
+    const newRow = tableBody.insertRow()
+
+    const cell1 = newRow.insertCell(0)
+    const cell2 = newRow.insertCell(1)
+    const cell3 = newRow.insertCell(2)
+
+    cell1.innerText = seatData;
+    cell2.innerText = 'Economy';
+    cell3.innerText = 550;
+
+}
+
 function showElementById(elementId){
     const element = document.getElementById(elementId)
-    console.log(element)
     element.classList.remove('hidden')
 }
 
-function setBackGroundColorById(elementId){
+function hideElementById(elementId){
     const element = document.getElementById(elementId)
-    element.classList.add('bg-[#1DD100]')
-}
-function removeBackGroundColorById(elementId){
-    const element = document.getElementById(elementId)
-    element.classList.remove('bg-[#1DD100]')
-}
-
-function cursorAllowed(elementId) {
-    const element = document.getElementById(elementId);
-    element.classList.remove('cursor-not-allowed')
-}
-function cursorNotAllowed(elementId) {
-    const element = document.getElementById(elementId);
-    element.classList.add('cursor-not-allowed')
-}
-
-function enableBtn(elementId) {
-    document.getElementById(elementId).disabled = false;
+    element.classList.add('hidden')
 }
